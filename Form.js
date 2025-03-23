@@ -15,20 +15,22 @@ const datosValue = () => {
   ) {
     Swal.fire({
       title: "Correcto, eres la autentica Salukiiii!",
-      text: "Esta flor esta hecha para ti!",
+      Text: "Esta flor esta hecha para ti!",
       icon: "success",
       html: `<a href="flower.html">Ver Flores</a>`,
     });
   } else {
     Swal.fire({
       title: "Eres una falsa!",
-      text: "Veteme de ahi!",
+      Text: "Veteme de ahi!",
       icon: "error",
     });
   }
 };
 
 Sumbit.addEventListener("click", (e) => {
+  alert([nombre.value, apodo.value, oficio.value, harry.value, tecnico.value]);
   datosValue();
+
   e.preventDefault();
 });
